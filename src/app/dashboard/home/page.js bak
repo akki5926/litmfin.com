@@ -1,0 +1,419 @@
+// app/dashboard/home/page.js
+'use client';
+
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import TypedText from '@/components/TypedText';
+
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+const FATCA_API_URL = `${API_BASE_URL}/fatca_details_api.php`;
+
+const defaultQuickActions = [
+  { 
+    id: 0, 
+    title: 'KYC Compliant', 
+    description: 'Know Your Customer verification', 
+    path: 'https://www.camsonline.com/Investors/Transactions/KYC/KYC-Status', 
+    priority: 'high',
+    external: true,
+  },
+  { id: 1, title: 'Complete Personal Details', description: 'Fill in your personal information', path: '/dashboard/profile', key: 'personal_details_submitted', priority: 'high' },
+  { id: 2, title: 'Add Bank Details', description: 'Link your bank account', path: '/dashboard/bank-details', key: 'bank_details_submitted', priority: 'high' },
+  { id: 3, title: 'Complete FATCA', description: 'Foreign Account Tax Compliance', path: '/dashboard/fatca', key: 'fatca_done', priority: 'medium' },
+  { id: 4, title: 'Nominee Details', description: 'Complete your nominee information', path: '/dashboard/nominee', key: 'nominee_details_submitted', priority: 'medium' },
+  { id: 5, title: 'Risk Profile', description: 'Complete your risk assessment', path: '/dashboard/risk-profile', key: 'risk_profile_done', priority: 'medium' },
+];
+
+export default function DashboardWelcomePage() {
+  const [user, setUser] = useState(null);
+  const [statusData, setStatusData] = useState({});
+  const [loading, setLoading] = useState(true);
+  const [syncing, setSyncing] = useState(false);
+  const router = useRouter();
+
+  const getKYCStatus = (statusData) => {
+    if (statusData.kyc_complient === 'Y') {
+      return 'completed';
+    }
+    
+    if (statusData.kyc_status_remark && 
+        statusData.kyc_status_remark.trim() !== '' && 
+        statusData.kyc_status_remark.trim().toLowerCase() !== 'null') {
+      return 'completed';
+    }
+    
+    return 'pending';
+  };
+
+  const [quickActions, setQuickActions] = useState(defaultQuickActions);
+
+  const fetchAccountStatus = async (userId, token) => {
+    try {
+      const res = await fetch(`${FATCA_API_URL}?action=get_client_status&user_id=${userId}`, {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!res.ok) {
+        console.error('Failed to fetch account status:', res.status);
+        return {};
+      }
+
+      const data = await res.json();
+      console.log('Account status data:', data);
+      return data.success && data.data ? data.data : {};
+    } catch (error) {
+      console.error('Error fetching account status:', error);
+      return {};
+    }
+  };
+
+  // New function to sync FATCA status from NSE
+  const syncFatcaStatus = async () => {
+    const token = localStorage.getItem('site_token');
+    const storedUser = localStorage.getItem('site_user');
+    
+    if (!storedUser || !token) {
+      console.error('No user data or token found');
+      return false;
+    }
+    
+    setSyncing(true);
+    
+    try {
+      const userData = JSON.parse(storedUser);
+      
+      const res = await fetch(`${FATCA_API_URL}?action=sync_fatca_status`, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ user_id: userData.id })
+      });
+      
+      const data = await res.json();
+      console.log('Sync response:', data);
+      
+      if (data.success) {
+        // Update status data with synced information
+        setStatusData(prev => ({
+          ...prev,
+          fatca_done: data.data?.fatca_done || prev.fatca_done,
+          activation_status: data.data?.activation_status || prev.activation_status,
+          deactivation_message: data.data?.deactivation_message || prev.deactivation_message
+        }));
+        
+        // Refresh quick actions
+        const updatedActions = quickActions.map(action => {
+          if (action.id === 0) {
+            return {
+              ...action,
+              status: getKYCStatus(statusData),
+              remark: statusData.kyc_status_remark || ''
+            };
+          } else {
+            let status = 'pending';
+            if (action.key === 'fatca_done') {
+              status = (data.data?.fatca_done === 'Y') ? 'completed' : 'pending';
+            } else {
+              status = statusData[action.key] === 'Y' ? 'completed' : 'pending';
+            }
+            return { ...action, status };
+          }
+        });
+        setQuickActions(updatedActions);
+        
+        return true;
+      } else {
+        console.error('Sync failed:', data.message);
+        alert('Failed to sync status: ' + data.message);
+        return false;
+      }
+    } catch (error) {
+      console.error('Error syncing FATCA status:', error);
+      alert('Error syncing status. Please try again.');
+      return false;
+    } finally {
+      setSyncing(false);
+    }
+  };
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem('site_user');
+    const authStatus = localStorage.getItem('site_auth');
+    const storedToken = localStorage.getItem('site_token');
+
+    if (!storedUser || authStatus !== 'true') {
+      router.push('/login');
+      return;
+    }
+
+    try {
+      const userData = JSON.parse(storedUser);
+      setUser(userData);
+
+      (async () => {
+        const status = await fetchAccountStatus(userData.id || userData.user_id, storedToken);
+        setStatusData(status);
+
+        const updatedActions = defaultQuickActions.map(action => {
+          if (action.id === 0) {
+            return {
+              ...action,
+              status: getKYCStatus(status),
+              remark: status.kyc_status_remark || ''
+            };
+          } else {
+            return {
+              ...action,
+              status: status[action.key] === 'Y' ? 'completed' : 'pending'
+            };
+          }
+        });
+        setQuickActions(updatedActions);
+        setLoading(false);
+      })();
+    } catch (error) {
+      console.error('Error parsing user data:', error);
+      router.push('/login');
+    }
+  }, [router]);
+
+  const handleQuickAction = (action) => {
+    if (action.external) {
+      if (action.id === 0) {
+        const userConfirmed = window.confirm("We are open to third party. Do you want to proceed?");
+        if (userConfirmed) {
+          window.open(action.path, '_blank');
+        }
+      } else {
+        window.open(action.path, '_blank');
+      }
+    } else {
+      router.push(action.path);
+    }
+  };
+
+  if (!user || loading) {
+    return (
+      <div className="flex items-center justify-center min-h-[400px]">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
+          <p className="mt-4 text-gray-600">Loading...</p>
+        </div>
+      </div>
+    );
+  }
+
+  const requiredKeys = [
+    'kyc_complient',
+    'fatca_done',
+    'risk_profile_done',
+    'personal_details_submitted',
+    'nominee_details_submitted',
+    'bank_details_submitted'
+  ];
+
+  const statusCompletedCount = requiredKeys.filter(key => {
+    if (key === 'kyc_complient') {
+      return statusData.kyc_complient === 'Y' ||
+             (statusData.kyc_status_remark && statusData.kyc_status_remark.trim() !== '' && statusData.kyc_status_remark.trim().toLowerCase() !== 'null');
+    }
+    return statusData[key] === 'Y';
+  }).length;
+
+  const isActivated = statusData.activation_status === 'Y' || statusCompletedCount === requiredKeys.length;
+  const progressPercent = Math.round((statusCompletedCount / requiredKeys.length) * 100);
+  const activationText = isActivated ? 'Client Code Activated' : 'Activation Pending';
+
+  const renderKYCStatus = (action) => {
+    if (action.id === 0 && action.remark) {
+      return (
+        <div className="mt-2">
+          <span className="text-sm text-gray-600">Remark: </span>
+          <span className="text-sm font-medium text-gray-800">{action.remark}</span>
+        </div>
+      );
+    }
+    return null;
+  };
+
+  return (
+    <div className="space-y-8">
+      {/* Welcome Header */}
+      <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white">
+        <div className="flex flex-col md:flex-row md:items-center justify-between">
+          <div>
+            <h1 className="text-3xl font-bold mb-2">Welcome back, <TypedText text={user.name} className="text-white" />!</h1>
+            <p className="text-blue-100 opacity-90">
+              {statusData.activation_status === 'Y' 
+                ? 'Your client code is activated. You can start investing.' 
+                : 'Complete your account setup to start investing'}
+            </p>
+          </div>
+          <div className="mt-4 md:mt-0 bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
+            <p className="text-sm opacity-80">Account Status</p>
+            <div className="mt-2 px-4 py-1 bg-yellow-500/20 border border-yellow-500/30 rounded-full text-yellow-300 text-sm font-medium">
+              {activationText}
+            </div>
+          </div>
+        </div>
+
+        {/* Progress Bar */}
+        <div className="mt-8">
+          <div className="flex justify-between items-center mb-2">
+            <span className="text-sm">Setup Progress</span>
+            <span className="text-sm font-medium">{progressPercent}%</span>
+          </div>
+          <div className="w-full bg-white/20 rounded-full h-2.5">
+            <div className="bg-white h-2.5 rounded-full" style={{ width: `${progressPercent}%` }}></div>
+          </div>
+        </div>
+      </div>
+
+      {/* Refresh/Sync Button - Only show if NOT activated */}
+      {!isActivated && (
+        <div className="flex justify-end">
+          <button
+            onClick={syncFatcaStatus}
+            disabled={syncing}
+            className={`flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors ${
+              syncing ? 'opacity-50 cursor-not-allowed' : ''
+            }`}
+          >
+            {syncing ? (
+              <>
+                <svg className="animate-spin h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Syncing...
+              </>
+            ) : (
+              <>
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+                Check FATCA Status
+              </>
+            )}
+          </button>
+        </div>
+      )}
+
+      {/* Quick Actions */}
+      <div>
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-xl font-bold text-gray-900">Quick Actions</h2>
+          <Link 
+            href="/dashboard/account-status" 
+            className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+          >
+            View All Tasks →
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {quickActions.map(action => (
+            <div 
+              key={action.id}
+              className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer"
+              onClick={() => handleQuickAction(action)}
+            >
+              <div className="flex items-start justify-between">
+                <div className="flex items-center">
+                  <div className={`w-12 h-12 rounded-lg flex items-center justify-center mr-4 ${
+                    action.priority === 'high' ? 'bg-red-50' : 'bg-blue-50'
+                  }`}>
+                    <svg 
+                      className={`w-6 h-6 ${action.priority === 'high' ? 'text-red-600' : 'text-blue-600'}`}
+                      fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-medium text-gray-900">{action.title}</h3>
+                    <p className="text-sm text-gray-500 mt-1">{action.description}</p>
+                    {renderKYCStatus(action)}
+                  </div>
+                </div>
+                <div className="flex flex-col items-end">
+                  <span className={`px-2 py-1 text-xs font-medium rounded-full ${
+                    action.status === 'completed' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'
+                  }`}>
+                    {action.status === 'completed' ? 'Completed' : 'Pending'}
+                  </span>
+                  {action.priority === 'high' && action.status !== 'completed' && (
+                    <span className="mt-2 px-2 py-1 bg-red-100 text-red-800 text-xs font-medium rounded-full">
+                      High Priority
+                    </span>
+                  )}
+                </div>
+              </div>
+              <div className="mt-6">
+                {action.external ? (
+                  <a 
+                    href={action.path} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (action.id === 0) {
+                        e.preventDefault();
+                        const userConfirmed = window.confirm("We are open to third party. Do you want to proceed?");
+                        if (userConfirmed) {
+                          window.open(action.path, '_blank');
+                        }
+                      }
+                    }}
+                    className="w-full block text-center py-2.5 rounded-lg font-medium bg-blue-600 hover:bg-blue-700 text-white transition-colors"
+                  >
+                    {action.status === 'completed' ? 'View KYC Status' : 'Check KYC Status'}
+                  </a>
+                ) : (
+                  <button 
+                    className="w-full py-2.5 rounded-lg font-medium transition-colors bg-blue-600 hover:bg-blue-700 text-white"
+                  >
+                    {action.status === 'completed' ? 'Review' : 'Complete Now'}
+                  </button>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Help Section */}
+      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100">
+        <div className="flex flex-col md:flex-row md:items-center justify-between">
+          <div>
+            <h3 className="font-bold text-gray-900 text-lg mb-2">Need Help?</h3>
+            <p className="text-gray-600">
+              Our support team is here to assist you with the account setup process.
+            </p>
+          </div>
+          <div className="mt-4 md:mt-0 flex gap-4">
+            <button 
+             onClick={() => router.push('/contact')}
+            className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
+              Contact Support
+            </button>
+            <button 
+            onClick={() => router.push('/faq')}
+            className="px-6 py-3 bg-white hover:bg-gray-50 text-blue-600 font-medium rounded-lg border border-blue-200 transition-colors">
+              View FAQs
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

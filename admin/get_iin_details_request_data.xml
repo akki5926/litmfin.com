@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+			<NMFIIService>
+				<service_request>
+					<appln_id></appln_id>
+                    <password></password>
+                    <broker_code></broker_code>
+					<iin>5011783507</iin>
+				</service_request>
+			</NMFIIService>

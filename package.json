@@ -1,0 +1,52 @@
+{
+  "name": "litmfin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:aw": "npm run switch:aw && next dev",
+    "dev:litm": "npm run switch:litm && next dev",
+    "dev:litmv4": "npm run switch:litmv4 && next dev",
+    "build": "next build",
+    "build:prod": "set NODE_ENV=production&& next build",
+    "start": "next start",
+    "lint": "next lint",
+    "switch:aw": "node scripts/switch-site.js aw",
+    "switch:litm": "node scripts/switch-site.js litm",
+    "switch:litmv4": "node scripts/switch-site.js litmv4",
+    "build:aw": "node scripts/build-site.js aw",
+    "build:litm": "node scripts/build-site.js litm",
+    "build:litmv4": "node scripts/build-site.js litmv4"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@heroicons/react": "^2.2.0",
+    "@mui/icons-material": "^7.3.7",
+    "@mui/material": "^7.3.7",
+    "@mui/x-date-pickers": "^8.26.0",
+    "date-fns": "^4.1.0",
+    "dayjs": "^1.11.19",
+    "jquery": "^4.0.0",
+    "jsdom": "^29.1.1",
+    "next": "^14.0.0",
+    "nodemailer": "^7.0.11",
+    "react": "^18.2.0",
+    "react-calendar": "^6.0.0",
+    "react-datepicker": "^9.1.0",
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^3.1.0",
+    "recharts": "^3.7.0",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.24",
+    "eslint": "^8.53.0",
+    "eslint-config-next": "14.0.0",
+    "postcss": "^8.5.6",
+    "postcss-scss": "^4.0.9",
+    "stylelint": "^16.26.1",
+    "stylelint-config-standard": "^39.0.1",
+    "tailwindcss": "^3.4.19"
+  }
+}

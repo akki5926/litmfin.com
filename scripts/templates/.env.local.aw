@@ -1,0 +1,4 @@
+# Local dev for AutoWealth
+NEXT_PUBLIC_BASE_PATH=
+NEXT_PUBLIC_API_BASE_URL=http://localhost/autowealth.in/api
+NEXT_PUBLIC_RECAPTCHA_SITE_KEY=6LfT6gMiAAAAAIHGuQx-QNg-9ehRLVHMpBVPwTxs

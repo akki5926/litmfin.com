@@ -1,0 +1,20 @@
+[
+    {
+        "timestamp": "2026-10-07 13:30:38 IST",
+        "url": "https://www.nseinvest.com/nsemfdesk/api/v2/reports/client_detail_report",
+        "http_code": 200,
+        "client_code": "5455311882",
+        "client_name": "",
+        "request": {
+            "client_code": "5455311882",
+            "from_date": "01-10-2026",
+            "to_date": "07-10-2026"
+        },
+        "response": {
+            "response_status": "S",
+            "report_data_total": "0",
+            "report_data": [],
+            "error_remark": "No record(s) found."
+        }
+    }
+]

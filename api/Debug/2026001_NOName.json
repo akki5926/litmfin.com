@@ -1,0 +1,38 @@
+[
+    {
+        "timestamp": "2026-10-14 11:02:19 UTC",
+        "url": "https://www.nseinvest.com/nsemfdesk/api/v2/reports/TRANSACTION_DETAIL_REPORT",
+        "http_code": 200,
+        "client_code": "2026001",
+        "client_name": "",
+        "request": {
+            "from_date": "13-10-2026",
+            "to_date": "13-10-2026",
+            "client_code": "2026001"
+        },
+        "response": {
+            "response_status": "S",
+            "report_data_total": "0",
+            "report_data": [],
+            "error_remark": "No record(s) found."
+        }
+    },
+    {
+        "timestamp": "2026-10-14 11:06:42 UTC",
+        "url": "https://www.nseinvest.com/nsemfdesk/api/v2/reports/TRANSACTION_DETAIL_REPORT",
+        "http_code": 200,
+        "client_code": "2026001",
+        "client_name": "",
+        "request": {
+            "from_date": "13-10-2026",
+            "to_date": "13-10-2026",
+            "client_code": "2026001"
+        },
+        "response": {
+            "response_status": "S",
+            "report_data_total": "0",
+            "report_data": [],
+            "error_remark": "No record(s) found."
+        }
+    }
+]

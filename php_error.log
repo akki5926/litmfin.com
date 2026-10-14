@@ -1,0 +1,353 @@
+[29-Jul-2026 15:51:07 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function getallheaders() in C:\wamp64\www\litmfin.com\api\includes\cors.php:136
+Stack trace:
+#0 C:\wamp64\www\litmfin.com\api\grand_folio_api.php(14): getBearerToken()
+#1 C:\wamp64\www\litmfin.com\api\grand_folio_api.php(43): authenticateRequest()
+#2 C:\wamp64\www\litmfin.com\test_db.php(12): require('C:\\wamp64\\www\\l...')
+#3 {main}
+  thrown in C:\wamp64\www\litmfin.com\api\includes\cors.php on line 136
+[29-Jul-2026 17:04:00 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='SUNDARAM LARGE CAP FUND - REGULAR PLAN GROWTH', Code='BCGP', ISIN='INF903JA1IZ3', Status='ACTIVE'
+[29-Jul-2026 17:04:00 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 37841
+    [transaction_number] => 215355
+    [seq_no] => 
+    [transaction_id] => BC6102867232SIN215355
+    [transaction_date] => 2020-10-08
+)
+
+[29-Jul-2026 17:04:00 Asia/Kolkata] Portfolio UCC 5013007649: Initial transaction count = 71
+[29-Jul-2026 17:04:00 Asia/Kolkata] Portfolio UCC 5013007649: Transaction count after removing reversals = 69
+[29-Jul-2026 17:07:41 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='HDFC MULTI-ASSET ALLOCATION FUND - REGULAR PLAN - GROWTH', Code='', ISIN='INF179K01AP0', Status='ACTIVE'
+[29-Jul-2026 17:07:41 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='KOTAK MULTI ASSET ALLOCATION FUND -REGULAR PLAN-GR', Code='', ISIN='INF174KA1PA0', Status='ACTIVE'
+[29-Jul-2026 17:07:41 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='PGIM INDIA BALANCED ADVANTAGE FUND - REGULAR PLAN - GROWTH', Code='', ISIN='INF663L01V72', Status='ACTIVE'
+[29-Jul-2026 17:07:56 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 32016
+    [transaction_number] => 3994926
+    [seq_no] => 
+    [transaction_id] => MI17742408892NEW3994926
+    [transaction_date] => 2022-06-10
+)
+
+[29-Jul-2026 17:07:56 Asia/Kolkata] Portfolio UCC 5013544768: Initial transaction count = 189
+[29-Jul-2026 17:07:56 Asia/Kolkata] Portfolio UCC 5013544768: Transaction count after removing reversals = 189
+[29-Jul-2026 17:22:16 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='HDFC MULTI-ASSET ALLOCATION FUND - REGULAR PLAN - GROWTH', Code='', ISIN='INF179K01AP0', Status='ACTIVE'
+[29-Jul-2026 17:22:16 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='KOTAK MULTI ASSET ALLOCATION FUND -REGULAR PLAN-GR', Code='', ISIN='INF174KA1PA0', Status='ACTIVE'
+[29-Jul-2026 17:22:16 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='PGIM INDIA BALANCED ADVANTAGE FUND - REGULAR PLAN - GROWTH', Code='', ISIN='INF663L01V72', Status='ACTIVE'
+[29-Jul-2026 17:22:28 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 32016
+    [transaction_number] => 3994926
+    [seq_no] => 
+    [transaction_id] => MI17742408892NEW3994926
+    [transaction_date] => 2022-06-10
+)
+
+[29-Jul-2026 17:22:28 Asia/Kolkata] Portfolio UCC 5013544768: Initial transaction count = 189
+[29-Jul-2026 17:22:28 Asia/Kolkata] Portfolio UCC 5013544768: Transaction count after removing reversals = 189
+[29-Jul-2026 17:23:07 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='HDFC MULTI-ASSET ALLOCATION FUND - REGULAR PLAN - GROWTH', Code='', ISIN='INF179K01AP0', Status='ACTIVE'
+[29-Jul-2026 17:23:07 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='KOTAK MULTI ASSET ALLOCATION FUND -REGULAR PLAN-GR', Code='', ISIN='INF174KA1PA0', Status='ACTIVE'
+[29-Jul-2026 17:23:07 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='PGIM INDIA BALANCED ADVANTAGE FUND - REGULAR PLAN - GROWTH', Code='', ISIN='INF663L01V72', Status='ACTIVE'
+[29-Jul-2026 17:23:21 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 32016
+    [transaction_number] => 3994926
+    [seq_no] => 
+    [transaction_id] => MI17742408892NEW3994926
+    [transaction_date] => 2022-06-10
+)
+
+[29-Jul-2026 17:23:21 Asia/Kolkata] Portfolio UCC 5013544768: Initial transaction count = 189
+[29-Jul-2026 17:23:21 Asia/Kolkata] Portfolio UCC 5013544768: Transaction count after removing reversals = 189
+[29-Jul-2026 17:39:28 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='HDFC MULTI-ASSET ALLOCATION FUND - REGULAR PLAN - GROWTH', Code='', ISIN='INF179K01AP0', Status='ACTIVE'
+[29-Jul-2026 17:39:28 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='KOTAK MULTI ASSET ALLOCATION FUND -REGULAR PLAN-GR', Code='', ISIN='INF174KA1PA0', Status='ACTIVE'
+[29-Jul-2026 17:39:28 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='PGIM INDIA BALANCED ADVANTAGE FUND - REGULAR PLAN - GROWTH', Code='', ISIN='INF663L01V72', Status='ACTIVE'
+[29-Jul-2026 17:39:44 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 32016
+    [transaction_number] => 3994926
+    [seq_no] => 
+    [transaction_id] => MI17742408892NEW3994926
+    [transaction_date] => 2022-06-10
+)
+
+[29-Jul-2026 17:39:44 Asia/Kolkata] Portfolio UCC 5013544768: Initial transaction count = 189
+[29-Jul-2026 17:39:44 Asia/Kolkata] Portfolio UCC 5013544768: Transaction count after removing reversals = 189
+[29-Jul-2026 17:41:01 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='HDFC MULTI-ASSET ALLOCATION FUND - REGULAR PLAN - GROWTH', Code='', ISIN='INF179K01AP0', Status='ACTIVE'
+[29-Jul-2026 17:41:01 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='KOTAK MULTI ASSET ALLOCATION FUND -REGULAR PLAN-GR', Code='', ISIN='INF174KA1PA0', Status='ACTIVE'
+[29-Jul-2026 17:41:01 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='PGIM INDIA BALANCED ADVANTAGE FUND - REGULAR PLAN - GROWTH', Code='', ISIN='INF663L01V72', Status='ACTIVE'
+[29-Jul-2026 17:41:16 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 32016
+    [transaction_number] => 3994926
+    [seq_no] => 
+    [transaction_id] => MI17742408892NEW3994926
+    [transaction_date] => 2022-06-10
+)
+
+[29-Jul-2026 17:41:16 Asia/Kolkata] Portfolio UCC 5013544768: Initial transaction count = 189
+[29-Jul-2026 17:41:16 Asia/Kolkata] Portfolio UCC 5013544768: Transaction count after removing reversals = 189
+[29-Jul-2026 17:58:31 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='HDFC MULTI-ASSET ALLOCATION FUND - REGULAR PLAN - GROWTH', Code='', ISIN='INF179K01AP0', Status='ACTIVE'
+[29-Jul-2026 17:58:31 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='KOTAK MULTI ASSET ALLOCATION FUND -REGULAR PLAN-GR', Code='', ISIN='INF174KA1PA0', Status='ACTIVE'
+[29-Jul-2026 17:58:31 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='PGIM INDIA BALANCED ADVANTAGE FUND - REGULAR PLAN - GROWTH', Code='', ISIN='INF663L01V72', Status='ACTIVE'
+[29-Jul-2026 17:58:50 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 32016
+    [transaction_number] => 3994926
+    [seq_no] => 
+    [transaction_id] => MI17742408892NEW3994926
+    [transaction_date] => 2022-06-10
+)
+
+[29-Jul-2026 17:58:50 Asia/Kolkata] Portfolio UCC 5013544768: Initial transaction count = 189
+[29-Jul-2026 17:58:50 Asia/Kolkata] Portfolio UCC 5013544768: Transaction count after removing reversals = 189
+[29-Jul-2026 18:04:10 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='HDFC MULTI-ASSET ALLOCATION FUND - REGULAR PLAN - GROWTH', Code='', ISIN='INF179K01AP0', Status='ACTIVE'
+[29-Jul-2026 18:04:10 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='KOTAK MULTI ASSET ALLOCATION FUND -REGULAR PLAN-GR', Code='', ISIN='INF174KA1PA0', Status='ACTIVE'
+[29-Jul-2026 18:04:10 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='PGIM INDIA BALANCED ADVANTAGE FUND - REGULAR PLAN - GROWTH', Code='', ISIN='INF663L01V72', Status='ACTIVE'
+[29-Jul-2026 18:04:25 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 32016
+    [transaction_number] => 3994926
+    [seq_no] => 
+    [transaction_id] => MI17742408892NEW3994926
+    [transaction_date] => 2022-06-10
+)
+
+[29-Jul-2026 18:04:25 Asia/Kolkata] Portfolio UCC 5013544768: Initial transaction count = 189
+[29-Jul-2026 18:04:25 Asia/Kolkata] Portfolio UCC 5013544768: Transaction count after removing reversals = 189
+[29-Jul-2026 18:11:41 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='HDFC MULTI-ASSET ALLOCATION FUND - REGULAR PLAN - GROWTH', Code='', ISIN='INF179K01AP0', Status='ACTIVE'
+[29-Jul-2026 18:11:41 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='KOTAK MULTI ASSET ALLOCATION FUND -REGULAR PLAN-GR', Code='', ISIN='INF174KA1PA0', Status='ACTIVE'
+[29-Jul-2026 18:11:41 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SWP - FundName='PGIM INDIA BALANCED ADVANTAGE FUND - REGULAR PLAN - GROWTH', Code='', ISIN='INF663L01V72', Status='ACTIVE'
+[29-Jul-2026 18:11:57 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 32016
+    [transaction_number] => 3994926
+    [seq_no] => 
+    [transaction_id] => MI17742408892NEW3994926
+    [transaction_date] => 2022-06-10
+)
+
+[29-Jul-2026 18:11:57 Asia/Kolkata] Portfolio UCC 5013544768: Initial transaction count = 189
+[29-Jul-2026 18:11:57 Asia/Kolkata] Portfolio UCC 5013544768: Transaction count after removing reversals = 189
+[29-Jul-2026 18:17:50 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='BANDHAN  VALUE FUND-GROWTH-(REGULAR PLAN)', Code='215', ISIN='INF194K01342', Status='ACTIVE'
+[29-Jul-2026 18:17:50 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='CANARA ROBECO SMALL CAP FUND', Code='SCGP', ISIN='INF760K01JF9', Status='ACTIVE'
+[29-Jul-2026 18:17:50 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 38333
+    [transaction_number] => 20861471
+    [seq_no] => 
+    [transaction_id] => SC17750713576SIN20861471
+    [transaction_date] => 2022-12-26
+)
+
+[29-Jul-2026 18:17:50 Asia/Kolkata] Portfolio UCC 5013684106: Initial transaction count = 113
+[29-Jul-2026 18:17:50 Asia/Kolkata] Portfolio UCC 5013684106: Transaction count after removing reversals = 113
+[31-Jul-2026 14:08:27 Asia/Kolkata] MySQLDB::getFamiliesByAnyIIN SQL: SELECT f.*,
+                  h.PRIMARY_HOLDER_NAME AS head_PRIMARY_HOLDER_NAME,
+                  m1.PRIMARY_HOLDER_NAME AS member1_PRIMARY_HOLDER_NAME,
+                  m2.PRIMARY_HOLDER_NAME AS member2_PRIMARY_HOLDER_NAME,
+                  m3.PRIMARY_HOLDER_NAME AS member3_PRIMARY_HOLDER_NAME
+                FROM tb_family f
+                LEFT JOIN vw_client_profiles h ON h.CLIENT_CODE = f.head_UCC
+                LEFT JOIN vw_client_profiles m1 ON m1.CLIENT_CODE = f.member1_UCC
+                LEFT JOIN vw_client_profiles m2 ON m2.CLIENT_CODE = f.member2_UCC
+                LEFT JOIN vw_client_profiles m3 ON m3.CLIENT_CODE = f.member3_UCC
+                WHERE f.head_UCC = '5011782684'
+                   OR f.member1_UCC = '5011782684'
+                   OR f.member2_UCC = '5011782684'
+                   OR f.member3_UCC = '5011782684' | Parameter: 5011782684
+[31-Jul-2026 14:08:36 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='KOTAK PIONEER  FUND-REGULAR PLAN-GR', Code='487', ISIN='INF174KA1EW8', Status='ACTIVE'
+[31-Jul-2026 14:08:36 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='QUANT BUSINESS CYCLE FUND-REGULAR PLAN GROWTH-GROWTH', Code='BCGP', ISIN='INF966L01BU6', Status='ACTIVE'
+[31-Jul-2026 14:08:36 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='EDELWEISS RECENTLY LISTED IPO FUND - REGULAR PLAN- GROWTH', Code='MORG', ISIN='INF754K01MH2', Status='ACTIVE'
+[31-Jul-2026 14:08:36 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='HDFC DIVIDEND YIELD FUND - REGULAR PLAN - GROWTH O', Code='DYRGR', ISIN='INF179KC1AR9', Status='ACTIVE'
+[31-Jul-2026 14:08:36 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='PGIM INDIA MIDCAP FUND - REGULAR PLAN - GROWTH', Code='MOGP', ISIN='INF663L01DZ4', Status='ACTIVE'
+[31-Jul-2026 14:08:37 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 33803
+    [transaction_number] => 564309
+    [seq_no] => 
+    [transaction_id] => CF17717800223SINR564309551547
+    [transaction_date] => 2019-11-20
+)
+
+[31-Jul-2026 14:08:37 Asia/Kolkata] Portfolio UCC 5011782684: Initial transaction count = 752
+[31-Jul-2026 14:08:37 Asia/Kolkata] Portfolio UCC 5011782684: Transaction count after removing reversals = 748
+[31-Jul-2026 14:08:37 Asia/Kolkata] getFamiliesByAnyIIN SQL: SELECT f.*,
+                  h.PRIMARY_HOLDER_NAME AS head_PRIMARY_HOLDER_NAME,
+                  m1.PRIMARY_HOLDER_NAME AS member1_PRIMARY_HOLDER_NAME,
+                  m2.PRIMARY_HOLDER_NAME AS member2_PRIMARY_HOLDER_NAME,
+                  m3.PRIMARY_HOLDER_NAME AS member3_PRIMARY_HOLDER_NAME
+                FROM tb_family f
+                LEFT JOIN vw_client_profiles h ON h.CLIENT_CODE = f.head_UCC
+                LEFT JOIN vw_client_profiles m1 ON m1.CLIENT_CODE = f.member1_UCC
+                LEFT JOIN vw_client_profiles m2 ON m2.CLIENT_CODE = f.member2_UCC
+                LEFT JOIN vw_client_profiles m3 ON m3.CLIENT_CODE = f.member3_UCC
+                WHERE f.head_UCC = ?
+                   OR f.member1_UCC = ?
+                   OR f.member2_UCC = ?
+                   OR f.member3_UCC = ? | Parameter: 5011782684
+[31-Jul-2026 14:08:37 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='KOTAK PIONEER  FUND-REGULAR PLAN-GR', Code='487', ISIN='INF174KA1EW8', Status='ACTIVE'
+[31-Jul-2026 14:08:37 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='QUANT BUSINESS CYCLE FUND-REGULAR PLAN GROWTH-GROWTH', Code='BCGP', ISIN='INF966L01BU6', Status='ACTIVE'
+[31-Jul-2026 14:08:37 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='EDELWEISS RECENTLY LISTED IPO FUND - REGULAR PLAN- GROWTH', Code='MORG', ISIN='INF754K01MH2', Status='ACTIVE'
+[31-Jul-2026 14:08:37 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='HDFC DIVIDEND YIELD FUND - REGULAR PLAN - GROWTH O', Code='DYRGR', ISIN='INF179KC1AR9', Status='ACTIVE'
+[31-Jul-2026 14:08:37 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='PGIM INDIA MIDCAP FUND - REGULAR PLAN - GROWTH', Code='MOGP', ISIN='INF663L01DZ4', Status='ACTIVE'
+[31-Jul-2026 14:08:38 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 33803
+    [transaction_number] => 564309
+    [seq_no] => 
+    [transaction_id] => CF17717800223SINR564309551547
+    [transaction_date] => 2019-11-20
+)
+
+[31-Jul-2026 14:08:38 Asia/Kolkata] Portfolio UCC 5011782684: Initial transaction count = 752
+[31-Jul-2026 14:08:38 Asia/Kolkata] Portfolio UCC 5011782684: Transaction count after removing reversals = 748
+[31-Jul-2026 14:08:38 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='360 ONE FLEXICAP FUND - REGULAR PLAN - GROWTH', Code='IFCRG', ISIN='INF579M01AP7', Status='ACTIVE'
+[31-Jul-2026 14:08:38 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='ITI FLEXI CAP FUND - REGULAR PLAN - GROWTH', Code='FCGP', ISIN='INF00XX01CL3', Status='ACTIVE'
+[31-Jul-2026 14:08:38 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='CANARA ROBECO SMALL CAP FUND', Code='SCGP', ISIN='INF760K01JF9', Status='ACTIVE'
+[31-Jul-2026 14:08:38 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='PARAG PARIKH FLEXI CAP FUND -REGULAR PLAN', Code='001RG', ISIN='INF879O01019', Status='ACTIVE'
+[31-Jul-2026 14:08:38 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='KOTAK AGGRESSIVE HYBRID FUND -REGULAR PLAN-GROWTH', Code='04G', ISIN='INF174K01E92', Status='ACTIVE'
+[31-Jul-2026 14:08:39 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 51729
+    [transaction_number] => 78694303
+    [seq_no] => 0
+    [transaction_id] => 78694303
+    [transaction_date] => 2020-01-17
+)
+
+[31-Jul-2026 14:08:39 Asia/Kolkata] Portfolio UCC 5011783507: Initial transaction count = 393
+[31-Jul-2026 14:08:39 Asia/Kolkata] Portfolio UCC 5011783507: Transaction count after removing reversals = 393
+[31-Jul-2026 14:08:39 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='DSP VALUE FUND - REGULAR - GROWTH', Code='607', ISIN='INF740KA1PM0', Status='ACTIVE'
+[31-Jul-2026 14:08:39 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='EDELWEISS GOLD AND SILVER ETF FUND OF FUND -REGULAR PLAN-GROWTH', Code='GFRG', ISIN='INF754K01OT3', Status='ACTIVE'
+[31-Jul-2026 14:08:39 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='ITI FLEXI CAP FUND - REGULAR PLAN - GROWTH', Code='FCGP', ISIN='INF00XX01CL3', Status='ACTIVE'
+[31-Jul-2026 14:08:39 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='TRUSTMF SMALL CAP FUND -REGULAR PLAN-GROWTH', Code='SCRGG', ISIN='INF0GCD01776', Status='ACTIVE'
+[31-Jul-2026 14:08:39 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 54180
+    [transaction_number] => 10162227
+    [seq_no] => 543232073
+    [transaction_id] => 10162227
+    [transaction_date] => 2022-07-19
+)
+
+[31-Jul-2026 14:08:39 Asia/Kolkata] Portfolio UCC 2026014: Initial transaction count = 125
+[31-Jul-2026 14:08:39 Asia/Kolkata] Portfolio UCC 2026014: Transaction count after removing reversals = 125
+[31-Jul-2026 14:28:10 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='KOTAK PIONEER  FUND-REGULAR PLAN-GR', Code='487', ISIN='INF174KA1EW8', Status='ACTIVE'
+[31-Jul-2026 14:28:10 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='QUANT BUSINESS CYCLE FUND-REGULAR PLAN GROWTH-GROWTH', Code='BCGP', ISIN='INF966L01BU6', Status='ACTIVE'
+[31-Jul-2026 14:28:10 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='EDELWEISS RECENTLY LISTED IPO FUND - REGULAR PLAN- GROWTH', Code='MORG', ISIN='INF754K01MH2', Status='ACTIVE'
+[31-Jul-2026 14:28:10 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='HDFC DIVIDEND YIELD FUND - REGULAR PLAN - GROWTH O', Code='DYRGR', ISIN='INF179KC1AR9', Status='ACTIVE'
+[31-Jul-2026 14:28:10 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='PGIM INDIA MIDCAP FUND - REGULAR PLAN - GROWTH', Code='MOGP', ISIN='INF663L01DZ4', Status='ACTIVE'
+[31-Jul-2026 14:28:10 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 33803
+    [transaction_number] => 564309
+    [seq_no] => 
+    [transaction_id] => CF17717800223SINR564309551547
+    [transaction_date] => 2019-11-20
+)
+
+[31-Jul-2026 14:28:10 Asia/Kolkata] Portfolio UCC 5011782684: Initial transaction count = 752
+[31-Jul-2026 14:28:10 Asia/Kolkata] Portfolio UCC 5011782684: Transaction count after removing reversals = 748
+[31-Jul-2026 14:32:10 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='KOTAK PIONEER  FUND-REGULAR PLAN-GR', Code='487', ISIN='INF174KA1EW8', Status='ACTIVE'
+[31-Jul-2026 14:32:10 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='QUANT BUSINESS CYCLE FUND-REGULAR PLAN GROWTH-GROWTH', Code='BCGP', ISIN='INF966L01BU6', Status='ACTIVE'
+[31-Jul-2026 14:32:10 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='EDELWEISS RECENTLY LISTED IPO FUND - REGULAR PLAN- GROWTH', Code='MORG', ISIN='INF754K01MH2', Status='ACTIVE'
+[31-Jul-2026 14:32:10 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='HDFC DIVIDEND YIELD FUND - REGULAR PLAN - GROWTH O', Code='DYRGR', ISIN='INF179KC1AR9', Status='ACTIVE'
+[31-Jul-2026 14:32:10 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='PGIM INDIA MIDCAP FUND - REGULAR PLAN - GROWTH', Code='MOGP', ISIN='INF663L01DZ4', Status='ACTIVE'
+[31-Jul-2026 14:32:10 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 33803
+    [transaction_number] => 564309
+    [seq_no] => 
+    [transaction_id] => CF17717800223SINR564309551547
+    [transaction_date] => 2019-11-20
+)
+
+[31-Jul-2026 14:32:10 Asia/Kolkata] Portfolio UCC 5011782684: Initial transaction count = 752
+[31-Jul-2026 14:32:10 Asia/Kolkata] Portfolio UCC 5011782684: Transaction count after removing reversals = 748
+[31-Jul-2026 14:34:05 Asia/Kolkata] getFamiliesByAnyIIN SQL: SELECT f.*,
+                  h.PRIMARY_HOLDER_NAME AS head_PRIMARY_HOLDER_NAME,
+                  m1.PRIMARY_HOLDER_NAME AS member1_PRIMARY_HOLDER_NAME,
+                  m2.PRIMARY_HOLDER_NAME AS member2_PRIMARY_HOLDER_NAME,
+                  m3.PRIMARY_HOLDER_NAME AS member3_PRIMARY_HOLDER_NAME
+                FROM tb_family f
+                LEFT JOIN vw_client_profiles h ON h.CLIENT_CODE = f.head_UCC
+                LEFT JOIN vw_client_profiles m1 ON m1.CLIENT_CODE = f.member1_UCC
+                LEFT JOIN vw_client_profiles m2 ON m2.CLIENT_CODE = f.member2_UCC
+                LEFT JOIN vw_client_profiles m3 ON m3.CLIENT_CODE = f.member3_UCC
+                WHERE f.head_UCC = ?
+                   OR f.member1_UCC = ?
+                   OR f.member2_UCC = ?
+                   OR f.member3_UCC = ? | Parameter: 5011782684
+[31-Jul-2026 14:34:05 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='KOTAK PIONEER  FUND-REGULAR PLAN-GR', Code='487', ISIN='INF174KA1EW8', Status='ACTIVE'
+[31-Jul-2026 14:34:05 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='QUANT BUSINESS CYCLE FUND-REGULAR PLAN GROWTH-GROWTH', Code='BCGP', ISIN='INF966L01BU6', Status='ACTIVE'
+[31-Jul-2026 14:34:05 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='EDELWEISS RECENTLY LISTED IPO FUND - REGULAR PLAN- GROWTH', Code='MORG', ISIN='INF754K01MH2', Status='ACTIVE'
+[31-Jul-2026 14:34:05 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='HDFC DIVIDEND YIELD FUND - REGULAR PLAN - GROWTH O', Code='DYRGR', ISIN='INF179KC1AR9', Status='ACTIVE'
+[31-Jul-2026 14:34:05 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='PGIM INDIA MIDCAP FUND - REGULAR PLAN - GROWTH', Code='MOGP', ISIN='INF663L01DZ4', Status='ACTIVE'
+[31-Jul-2026 14:34:05 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 33803
+    [transaction_number] => 564309
+    [seq_no] => 
+    [transaction_id] => CF17717800223SINR564309551547
+    [transaction_date] => 2019-11-20
+)
+
+[31-Jul-2026 14:34:05 Asia/Kolkata] Portfolio UCC 5011782684: Initial transaction count = 752
+[31-Jul-2026 14:34:05 Asia/Kolkata] Portfolio UCC 5011782684: Transaction count after removing reversals = 748
+[31-Jul-2026 14:34:06 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='360 ONE FLEXICAP FUND - REGULAR PLAN - GROWTH', Code='IFCRG', ISIN='INF579M01AP7', Status='ACTIVE'
+[31-Jul-2026 14:34:06 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='ITI FLEXI CAP FUND - REGULAR PLAN - GROWTH', Code='FCGP', ISIN='INF00XX01CL3', Status='ACTIVE'
+[31-Jul-2026 14:34:06 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='CANARA ROBECO SMALL CAP FUND', Code='SCGP', ISIN='INF760K01JF9', Status='ACTIVE'
+[31-Jul-2026 14:34:06 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='PARAG PARIKH FLEXI CAP FUND -REGULAR PLAN', Code='001RG', ISIN='INF879O01019', Status='ACTIVE'
+[31-Jul-2026 14:34:06 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='KOTAK AGGRESSIVE HYBRID FUND -REGULAR PLAN-GROWTH', Code='04G', ISIN='INF174K01E92', Status='ACTIVE'
+[31-Jul-2026 14:34:06 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 51729
+    [transaction_number] => 78694303
+    [seq_no] => 0
+    [transaction_id] => 78694303
+    [transaction_date] => 2020-01-17
+)
+
+[31-Jul-2026 14:34:06 Asia/Kolkata] Portfolio UCC 5011783507: Initial transaction count = 393
+[31-Jul-2026 14:34:06 Asia/Kolkata] Portfolio UCC 5011783507: Transaction count after removing reversals = 393
+[31-Jul-2026 14:34:07 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='DSP VALUE FUND - REGULAR - GROWTH', Code='607', ISIN='INF740KA1PM0', Status='ACTIVE'
+[31-Jul-2026 14:34:07 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='EDELWEISS GOLD AND SILVER ETF FUND OF FUND -REGULAR PLAN-GROWTH', Code='GFRG', ISIN='INF754K01OT3', Status='ACTIVE'
+[31-Jul-2026 14:34:07 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='ITI FLEXI CAP FUND - REGULAR PLAN - GROWTH', Code='FCGP', ISIN='INF00XX01CL3', Status='ACTIVE'
+[31-Jul-2026 14:34:07 Asia/Kolkata] DEBUG getRunningSIPDetails: Processed SIP - FundName='TRUSTMF SMALL CAP FUND -REGULAR PLAN-GROWTH', Code='SCRGG', ISIN='INF0GCD01776', Status='ACTIVE'
+[31-Jul-2026 14:34:07 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 54180
+    [transaction_number] => 10162227
+    [seq_no] => 543232073
+    [transaction_id] => 10162227
+    [transaction_date] => 2022-07-19
+)
+
+[31-Jul-2026 14:34:07 Asia/Kolkata] Portfolio UCC 2026014: Initial transaction count = 125
+[31-Jul-2026 14:34:07 Asia/Kolkata] Portfolio UCC 2026014: Transaction count after removing reversals = 125
+[05-Aug-2026 13:36:54 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_result::fetch() in C:\wamp64\www\litmfin.com\scratch\verify.php:22
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\litmfin.com\scratch\verify.php on line 22
+[05-Aug-2026 16:13:50 Asia/Kolkata] PHP Warning:  mysqli::query(): (HY000/1356): View 'lfin4_db.vw_admin_profiles' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them in C:\wamp64\www\litmfin.com\admin\database.php on line 202
+[05-Aug-2026 16:13:50 Asia/Kolkata] PHP Stack trace:
+[05-Aug-2026 16:13:50 Asia/Kolkata] PHP   1. {main}() C:\wamp64\www\litmfin.com\scratch\check_schema.php:0
+[05-Aug-2026 16:13:50 Asia/Kolkata] PHP   2. MySQLDB->select($query = 'DESCRIBE vw_admin_profiles') C:\wamp64\www\litmfin.com\scratch\check_schema.php:7
+[05-Aug-2026 16:13:50 Asia/Kolkata] PHP   3. MySQLDB->query($query = 'DESCRIBE vw_admin_profiles') C:\wamp64\www\litmfin.com\admin\database.php:217
+[05-Aug-2026 16:13:50 Asia/Kolkata] PHP   4. mysqli->query($query = 'DESCRIBE vw_admin_profiles') C:\wamp64\www\litmfin.com\admin\database.php:202
+[05-Aug-2026 16:42:18 Asia/Kolkata] PHP Notice:  Undefined index: email_id in C:\Users\anubh\.gemini\antigravity-ide\brain\1428e5c8-916e-419e-a831-fbe16f2e964c\scratch\run_verification.php on line 71
+[05-Aug-2026 16:42:18 Asia/Kolkata] PHP Stack trace:
+[05-Aug-2026 16:42:18 Asia/Kolkata] PHP   1. {main}() C:\Users\anubh\.gemini\antigravity-ide\brain\1428e5c8-916e-419e-a831-fbe16f2e964c\scratch\run_verification.php:0
+[07-Aug-2026 13:33:59 Asia/Kolkata] Step 1 - Sample row 1: Array
+(
+    [id] => 60994
+    [transaction_number] => 21321126
+    [seq_no] => 
+    [transaction_id] => SP508284243585SIN21321126
+    [transaction_date] => 2021-08-27
+)
+
+[07-Aug-2026 13:33:59 Asia/Kolkata] Portfolio UCC 20250017: Initial transaction count = 496
+[07-Aug-2026 13:33:59 Asia/Kolkata] Portfolio UCC 20250017: Transaction count after removing reversals = 494
+[07-Aug-2026 13:34:00 Asia/Kolkata] CAS_CALC: Fetched 946 valid transactions for UCC: 20250017

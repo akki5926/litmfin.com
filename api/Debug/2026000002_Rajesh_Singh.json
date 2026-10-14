@@ -1,0 +1,20 @@
+[
+    {
+        "timestamp": "2026-09-21 19:13:36 IST",
+        "url": "https://www.nseinvest.com/nsemfdesk/api/v2/reports/TRANSACTION_DETAIL_REPORT",
+        "http_code": 200,
+        "client_code": "2026000002",
+        "client_name": "Rajesh Singh",
+        "request": {
+            "from_date": "14-09-2026",
+            "to_date": "20-09-2026",
+            "client_code": "2026000002"
+        },
+        "response": {
+            "response_status": "S",
+            "report_data_total": "0",
+            "report_data": [],
+            "error_remark": "No record(s) found."
+        }
+    }
+]

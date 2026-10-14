@@ -1,0 +1,31 @@
+{
+	"ClientId": "litmfin",
+	"ClientSecret": "1L6VB9A8RO2WEW8SWAII",
+	"UserName": "TORE2KKG65KKORGCWU3V",
+	"Password": "K8D7LH6KY0NN4YONVIO0",
+	"EncryptionDecryptionKey": "Yt3WY7RNV2GYWk1CMrgb",
+	"PrivateKey": {
+		"keys": [
+			{
+				"p": "5a3d0SLcvBBacXTYxfte77bVcDEVMcDQmNhy4Qm0QdJfZhBDcU-eItZYI-wq4urgC5qR-yoe0-5QGOI2iYaUlVtVuiEOthDTqp3fZPF2oNmxidRhaLAWz0Ci8lio54pg2IUhl1jorJuy5hZcNoL43w6pkKmmI4uZXxAJOwlPh0E",
+				"kty": "RSA",
+				"q": "wAP2Gx-qcuT2pShXXGO3kSrju2ou4IWMnO6cQgXsf7SaJZydMXHQXgpGAGUfGrXmeDRFzi1IxulPFXjbcjKkevOeTu4l82651Nt8Tw69VbIJCj8OUc0E_dS7wlcdR6VKmdGYIQteDHHVDGYRa9VpwCAEtbPseK4bHZSTuCBJ7Gk",
+				"d": "FDp3FyddIcHfxhmGv8diiAPoIF8JKfaUUmKOxSCs3ne1kjnfE1myYTw4tMttF2_0B-ASNKp76wq1aNWtwWl_nL8hEG7QQSLH_YvRcd9PHU-Xd3VTkctBIvIh6OfnR364i1_Wtl9ijq8xa_2wRTSkyND__Rmolk_-W47l6dOBIOF2ki_Z5Gm6kSbo2J4D1pc3QyjbMxamiuCCpE4zs--0LrY3TAoeKaGviLxAlrCRNR8v9YRDajSF__sJ61hub99eZP84MNKHbGX58Dl3Se8Uka08bAaM1ZvOjmLci9B6WiPYKPC2LWFuP9IGAHZc9sSmKDkaQKACENDe4HJSUxNowQ",
+				"e": "AQAB",
+				"use": "sig",
+				"kid": "1d2317a0-c812-46d7-a994-02c7ee2da4fc",
+				"qi": "QfqaEaN7dbK1nT0PIFcYN3QfwFoObLbMJS0KL-H7mkfM_p7S-ZwshP8AhzplKWZuNejrwcA5A0yi6wj8fJeSm_U1PvH-A9LTnEQc58RWsHoD_jdFpFP85dEV6rCCnCO6U7ZDRbB-9uj9XeKVHuCtt3Ug1N2LZD__FYexBZpnf9U",
+				"dp": "EtZKrf9c-TOiJ1H9AWfXZnOpV7U-1sDImvCNo3VHSmq1lkpZLa7o-lR4ECIrdkbrLyhzNpVCyADwosnSzT6zavh9tHFHopkIsyKVktLW9uRD0lkP0CU5CbB0bMnmuG65-KgalC4fjyCJ8KL-1x2wyaKLN6kiTiIB5zEKgMQHuME",
+				"dq": "kDnpf5IXa1mD0aYtiF32Ifn_OGSXdVmatr2bbRQaAgpbxmiOwfblNd2tmtpZtKxwwlUxIZ5uDcps9oni-zICzb9zZ4IFy4Wd275I7vD5Ugb6N1IJpXPDjg1eQqlAevIyyLrf8-If8GUIS9nWuBKC7iaeowTUWAkeoOda1XCbVhE",
+				"n": "rEX0M9x_TJe7CYUmNFukvvt1q2ZXlT0O34pGMM8NUuyRwYxRD9Ceg4Pc_L-YkbW0vJNsml0ssumn1hY7xmg3mMxI47TsV4JjlifPyUSdycHTTKs1SwxNXlMFSVnhYgZMCuhYmKoOpeJ0UKAnnf5LdLi9hh-3vmJRMo-8fhyIdNNb8GAA4J2Yomgt9sh_o2P1zDU1gGPENyNUqv1BoSRRP8wXUAb2LAJSRKGYgxx0Fr598XS-tz-O-5nfKAFHwrbO8XCqyXpFyYBYBbDVSPUG03IG5o31iLxhhqx3_S631U-y2jl_YCaO6YmFftTZnj63WKwJb86wITOzfVgZ09dlqQ"
+			}
+		]
+	},
+	"PublicKey": {
+		"kty": "RSA",
+		"e": "AQAB",
+		"use": "sig",
+		"kid": "1d2317a0-c812-46d7-a994-02c7ee2da4fc",
+		"n": "rEX0M9x_TJe7CYUmNFukvvt1q2ZXlT0O34pGMM8NUuyRwYxRD9Ceg4Pc_L-YkbW0vJNsml0ssumn1hY7xmg3mMxI47TsV4JjlifPyUSdycHTTKs1SwxNXlMFSVnhYgZMCuhYmKoOpeJ0UKAnnf5LdLi9hh-3vmJRMo-8fhyIdNNb8GAA4J2Yomgt9sh_o2P1zDU1gGPENyNUqv1BoSRRP8wXUAb2LAJSRKGYgxx0Fr598XS-tz-O-5nfKAFHwrbO8XCqyXpFyYBYBbDVSPUG03IG5o31iLxhhqx3_S631U-y2jl_YCaO6YmFftTZnj63WKwJb86wITOzfVgZ09dlqQ"
+	}
+}

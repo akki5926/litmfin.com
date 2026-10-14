@@ -1,0 +1,517 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* ...existing code... */
+
+:root {
+  --primary-blue: #1a237e;
+  --secondary-blue: #303f9f;
+  --accent-blue: #3f51b5;
+}
+
+body {
+  color: #1f2937; /* text-gray-800 */
+  background-image: linear-gradient(to bottom right, #eff6ff, #fff); /* from-blue-50 to-white */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+  cursor: default;
+}
+
+/* Cursor indicator for buttons and clickable elements */
+button,
+a,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+[role="button"],
+.cursor-pointer {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Custom cursor styling for buttons */
+button::before,
+a::before {
+  content: '';
+}
+
+/* Button hover state with shadow and scale */
+button:not(:disabled):hover,
+input[type="button"]:not(:disabled):hover,
+input[type="submit"]:not(:disabled):hover,
+a:not([aria-disabled="true"]):hover,
+[role="button"]:not(:disabled):hover {
+  filter: brightness(1.05);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5) !important;
+  transform: translateY(-2px) scale(1.02);
+  transition: all 0.2s ease;
+  animation: button-glow 2s infinite;
+}
+
+/* Button focus state - same as hover for keyboard/click */
+button:not(:disabled):focus,
+input[type="button"]:not(:disabled):focus,
+input[type="submit"]:not(:disabled):focus,
+a:not([aria-disabled="true"]):focus,
+[role="button"]:not(:disabled):focus {
+  filter: brightness(1.05);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5) !important;
+  transform: translateY(-2px) scale(1.02);
+  animation: button-glow 2s infinite;
+  outline: none;
+}
+
+/* Button active state - same as hover when clicking */
+button:not(:disabled):active,
+input[type="button"]:not(:disabled):active,
+input[type="submit"]:not(:disabled):active,
+a:not([aria-disabled="true"]):active,
+[role="button"]:not(:disabled):active {
+  filter: brightness(1.08);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.6) !important;
+  transform: translateY(-3px) scale(1.03);
+  animation: button-glow 2s infinite;
+}
+
+/* Dropdown menu item hover effect */
+.dropdown-item:hover {
+  filter: brightness(1.05);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5);
+  transform: translateY(-2px) scale(1.02);
+  animation: button-glow 2s infinite;
+}
+
+/* Select element styling */
+select {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+select:hover:not(:disabled) {
+  filter: brightness(1.05);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5) !important;
+  border-color: #3b82f6 !important;
+  animation: button-glow 2s infinite;
+}
+
+select:focus:not(:disabled) {
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5) !important;
+  border-color: #3b82f6 !important;
+}
+
+select:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Option styling in dropdown */
+option {
+  padding: 8px;
+  background-color: white;
+  color: #1f2937;
+  transition: all 0.2s ease;
+}
+
+option:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+option:checked {
+  background: linear-gradient(#3b82f6, #3b82f6);
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* Custom Select Option Styling */
+.custom-option {
+  position: relative;
+}
+
+.custom-option:not(.selected):hover {
+  filter: brightness(1.05);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5) inset;
+  animation: button-glow 2s infinite;
+}
+
+.custom-option:active {
+  transform: scale(0.98);
+}
+
+/* Dropdown menu items - header menu effect */
+.dropdown-item {
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  position: relative;
+}
+
+.dropdown-item:not(:has(+ .bg-blue-100)):hover,
+.dropdown-item.text-gray-700:hover {
+  filter: brightness(1.05) !important;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5) !important;
+  transform: translateY(-2px) scale(1.02) !important;
+  animation: button-glow 2s infinite !important;
+  background-color: rgba(219, 234, 254, 0.8) !important;
+  color: #1e40af !important;
+}
+
+/* When active/selected */
+.dropdown-item.bg-blue-100,
+.dropdown-item[class*="bg-blue-100"] {
+  filter: brightness(1) !important;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4) !important;
+}
+
+/* Dropdown item active/click state */
+.dropdown-item:not(:has(+ .bg-blue-100)):active,
+.dropdown-item.text-gray-700:active {
+  filter: brightness(1.08) !important;
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.6) !important;
+  transform: translateY(-3px) scale(1.03) !important;
+  animation: button-glow 2s infinite !important;
+}
+
+/* Dropdown item focus state */
+.dropdown-item:focus,
+.dropdown-item:focus-within {
+  filter: brightness(1.08) !important;
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.6) !important;
+  transform: translateY(-3px) scale(1.03) !important;
+  animation: button-glow 2s infinite !important;
+  outline: none !important;
+}
+
+/* Disabled button cursor */
+button:disabled,
+input[type="button"]:disabled,
+input[type="submit"]:disabled,
+input[type="reset"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes input-dropdown {
+  0% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scaleY(1.08) scaleX(1.02);
+  }
+  100% {
+    transform: scaleY(1.1) scaleX(1.02);
+    opacity: 1;
+  }
+}
+
+@keyframes input-expand-glow {
+  0% {
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.1);
+  }
+  50% {
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+  }
+  100% {
+    box-shadow: 0 12px 28px rgba(59, 130, 246, 0.4);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 10px rgba(59, 130, 246, 0.5); }
+  50% { text-shadow: 0 0 20px rgba(59, 130, 246, 0.8); }
+}
+
+@keyframes button-glow {
+  0% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+  50% { box-shadow: 0 0 15px rgba(59, 130, 246, 0.8); }
+  100% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out;
+}
+
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* ========== INPUT FIELD DROPDOWN EFFECT ========== */
+/* Base input styling with hover dropdown effect */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="date"],
+input[type="time"],
+textarea,
+select {
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Dropdown effect on hover */
+input[type="text"]:hover:not(:disabled),
+input[type="email"]:hover:not(:disabled),
+input[type="password"]:hover:not(:disabled),
+input[type="number"]:hover:not(:disabled),
+input[type="tel"]:hover:not(:disabled),
+input[type="url"]:hover:not(:disabled),
+input[type="date"]:hover:not(:disabled),
+input[type="time"]:hover:not(:disabled),
+textarea:hover:not(:disabled),
+select:hover:not(:disabled) {
+  animation: input-dropdown 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation: input-expand-glow 0.4s ease-out forwards;
+  border-color: #3b82f6;
+  transform: scaleY(1.1) scaleX(1.02);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.4);
+}
+
+/* Focus state */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+textarea:focus,
+select:focus {
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.5);
+  border-color: #3b82f6;
+  outline: none;
+}
+
+/* Combined hover + focus state (for browsers that support it) */
+input[type="text"]:hover:focus:not(:disabled),
+input[type="email"]:hover:focus:not(:disabled),
+input[type="password"]:hover:focus:not(:disabled),
+input[type="number"]:hover:focus:not(:disabled),
+input[type="tel"]:hover:focus:not(:disabled),
+input[type="url"]:hover:focus:not(:disabled),
+input[type="date"]:hover:focus:not(:disabled),
+input[type="time"]:hover:focus:not(:disabled),
+textarea:hover:focus:not(:disabled),
+select:hover:focus:not(:disabled) {
+  animation: input-expand-glow 0.3s ease-out infinite;
+}
+
+/* Disabled state */
+input[type="text"]:disabled,
+input[type="email"]:disabled,
+input[type="password"]:disabled,
+input[type="number"]:disabled,
+input[type="tel"]:disabled,
+input[type="url"]:disabled,
+input[type="date"]:disabled,
+input[type="time"]:disabled,
+textarea:disabled,
+select:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  background-color: #f3f4f6;
+}
+
+/* Custom input container hover effect */
+.input-wrapper:hover input,
+.input-wrapper:hover textarea,
+.input-wrapper:hover select {
+  animation: input-dropdown 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation: input-expand-glow 0.4s ease-out forwards;
+  border-color: #3b82f6;
+  transform: scaleY(1.1) scaleX(1.02);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.4);
+}
+
+/* Input with icon container enlarge on hover */
+.input-icon-wrapper:hover {
+  animation: input-expand-glow 0.4s ease-out forwards;
+}
+
+/* remove default blue on click/focus/visited for elements that opt-in */
+.no-focus-blue,
+.no-focus-blue:visited,
+.no-focus-blue:active,
+.no-focus-blue:focus,
+.no-focus-blue:focus-visible,
+.no-focus-blue * {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-focus-ring-color: transparent !important;
+  color: inherit !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+
+/* ensure images and svgs don't show tap highlight */
+.no-focus-blue img,
+.no-focus-blue svg {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Consistent blue "Review" button used across dashboard */
+.btn-review {
+  background-image: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+  font-weight: 600;
+  transition: background-image .15s ease, transform .08s ease, box-shadow .12s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-review:hover { background-image: linear-gradient(90deg, #1e40af 0%, #183269 100%); transform: translateY(-1px); }
+.btn-review:active { transform: translateY(0); }
+
+/* Add this at the end of your globals.css file */
+
+/* ========== BLOG & MEDIA IMAGE FIXES ========== */
+/* Force consistent image sizing for blog and media cards */
+
+/* Fixed height containers for images */
+.blog-image-container,
+.media-image-container {
+  position: relative !important;
+  width: 100% !important;
+  height: 250px !important;
+  overflow: hidden !important;
+  background: linear-gradient(135deg, #e0e7ff 0%, #dbeafe 100%) !important;
+  flex-shrink: 0 !important;
+}
+
+/* Force all images inside these containers to have consistent size */
+.blog-image-container img,
+.media-image-container img,
+.blog-image-container .blog-card-image,
+.media-image-container .media-card-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+}
+
+/* For Next.js Image component if used */
+.blog-image-container span,
+.media-image-container span,
+.blog-image-container div[style*="position: relative"],
+.media-image-container div[style*="position: relative"] {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Ensure all images in blog/media cards are properly sized */
+article img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 250px !important;
+  object-fit: cover !important;
+}
+
+/* Alternative approach - target any image in article cards */
+article .relative img,
+article .absolute img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blog-image-container,
+  .media-image-container {
+    height: 200px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .blog-image-container,
+  .media-image-container {
+    height: 180px !important;
+  }
+}
+
+/* Fix for lazy loaded images */
+img[loading="lazy"] {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Ensure images don't overflow their containers */
+.overflow-hidden img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+}

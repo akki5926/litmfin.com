@@ -1,0 +1,117 @@
+[
+    {
+        "timestamp": "2026-10-12 13:24:54 IST",
+        "url": "https://www.nseinvest.com/nsemfdesk/api/v2/reports/TRANSACTION_DETAIL_REPORT",
+        "http_code": 0,
+        "client_code": "",
+        "client_name": "",
+        "request": {
+            "from_date": "05-10-2026",
+            "to_date": "11-10-2026"
+        },
+        "response": {
+            "error": "cURL error (28): Operation timed out after 60003 milliseconds with 0 bytes received"
+        }
+    },
+    {
+        "timestamp": "2026-10-12 13:25:55 IST",
+        "url": "https://www.nseinvest.com/nsemfdesk/api/v2/reports/TRANSACTION_DETAIL_REPORT",
+        "http_code": 0,
+        "client_code": "",
+        "client_name": "",
+        "request": {
+            "from_date": "05-10-2026",
+            "to_date": "11-10-2026"
+        },
+        "response": {
+            "error": "cURL error (28): Operation timed out after 60005 milliseconds with 0 bytes received"
+        }
+    },
+    {
+        "timestamp": "2026-10-14 16:08:58 IST",
+        "url": "https://www.nseinvest.com/nsemfdesk/api/v2/reports/TRANSACTION_DETAIL_REPORT",
+        "http_code": 0,
+        "client_code": "",
+        "client_name": "",
+        "request": {
+            "from_date": "07-10-2026",
+            "to_date": "13-10-2026"
+        },
+        "response": {
+            "error": "cURL error (28): Operation timed out after 60013 milliseconds with 0 bytes received"
+        }
+    },
+    {
+        "timestamp": "2026-10-14 16:11:06 IST",
+        "url": "https://www.nseinvest.com/nsemfdesk/api/v2/reports/TRANSACTION_DETAIL_REPORT",
+        "http_code": 0,
+        "client_code": "",
+        "client_name": "",
+        "request": {
+            "from_date": "07-10-2026",
+            "to_date": "13-10-2026"
+        },
+        "response": {
+            "error": "cURL error (28): Operation timed out after 60011 milliseconds with 0 bytes received"
+        }
+    },
+    {
+        "timestamp": "2026-10-14 16:22:08 IST",
+        "url": "https://www.nseinvest.com/nsemfdesk/api/v2/reports/TRANSACTION_DETAIL_REPORT",
+        "http_code": 0,
+        "client_code": "",
+        "client_name": "",
+        "request": {
+            "from_date": "07-10-2026",
+            "to_date": "13-10-2026"
+        },
+        "response": {
+            "error": "cURL error (28): Operation timed out after 60006 milliseconds with 0 bytes received"
+        }
+    },
+    {
+        "timestamp": "2026-10-14 10:58:09 UTC",
+        "url": "https://www.nseinvest.com/nsemfdesk/api/v2/reports/TRANSACTION_DETAIL_REPORT",
+        "http_code": 0,
+        "client_code": "",
+        "client_name": "",
+        "request": {
+            "from_date": "12-10-2026",
+            "to_date": "13-10-2026"
+        },
+        "response": {
+            "error": "cURL error (28): Operation timed out after 10006 milliseconds with 0 bytes received"
+        }
+    },
+    {
+        "timestamp": "2026-10-14 10:58:24 UTC",
+        "url": "https://www.nseinvest.com/nsemfdesk/api/v2/reports/TRANSACTION_DETAIL_REPORT",
+        "http_code": 0,
+        "client_code": "",
+        "client_name": "",
+        "request": {
+            "from_date": "12-10-2026",
+            "to_date": "13-10-2026"
+        },
+        "response": {
+            "error": "cURL error (28): Operation timed out after 15003 milliseconds with 0 bytes received"
+        }
+    },
+    {
+        "timestamp": "2026-10-14 10:58:43 UTC",
+        "url": "https://www.nseinvest.com/nsemfdesk/api/v2/reports/TRANSACTION_DETAIL_REPORT",
+        "http_code": 200,
+        "client_code": "",
+        "client_name": "",
+        "request": {
+            "from_date": "13-10-2026",
+            "to_date": "13-10-2026"
+        },
+        "response": {
+            "response_status": "S",
+            "report_data_total": "0",
+            "report_data": [],
+            "error_remark": "No record(s) found."
+        }
+    }
+]

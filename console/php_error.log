@@ -1,0 +1,18 @@
+[07-Aug-2026 13:08:37 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'admin_role' in 'field list' in C:\wamp64\www\litmfin.com\admin\database.php:459
+Stack trace:
+#0 C:\wamp64\www\litmfin.com\admin\database.php(459): mysqli->prepare('SELECT ad_id, a...')
+#1 C:\wamp64\www\litmfin.com\console\index.php(20): MySQLDB->checkAdminUserLogin('adpro', 'admin123')
+#2 {main}
+  thrown in C:\wamp64\www\litmfin.com\admin\database.php on line 459
+[07-Aug-2026 13:11:34 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: View 'aut-v4-250526-db.vw_admin_profiles' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them in C:\wamp64\www\litmfin.com\admin\database.php:459
+Stack trace:
+#0 C:\wamp64\www\litmfin.com\admin\database.php(459): mysqli->prepare('SELECT ad_id, a...')
+#1 C:\wamp64\www\litmfin.com\console\index.php(20): MySQLDB->checkAdminUserLogin('adpro', 'admin123')
+#2 {main}
+  thrown in C:\wamp64\www\litmfin.com\admin\database.php on line 459
+[07-Aug-2026 13:15:34 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: View 'aut-v4-250526-db.vw_admin_profiles' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them in C:\wamp64\www\litmfin.com\admin\database.php:459
+Stack trace:
+#0 C:\wamp64\www\litmfin.com\admin\database.php(459): mysqli->prepare('SELECT ad_id, a...')
+#1 C:\wamp64\www\litmfin.com\console\index.php(20): MySQLDB->checkAdminUserLogin('adpro', 'admin123')
+#2 {main}
+  thrown in C:\wamp64\www\litmfin.com\admin\database.php on line 459

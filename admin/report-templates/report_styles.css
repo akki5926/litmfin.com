@@ -1,0 +1,139 @@
+/*
+ * report_styles.css — LitmFin Portfolio Report
+ * Theme: dark navy headers, orange/teal accents, clean tables.
+ * Inspired by professional fund factsheet design.
+ *
+ * Primary colours:
+ *   Navy     #1E3A5F  — section headers, table headers
+ *   Orange   #E87722  — accents, Nifty 500 bar
+ *   Teal     #0D7C5F  — positive values, portfolio bar
+ *   Red      #C0392B  — negative values
+ *   BgLight  #EEF3F8  — alternate table rows, section bg
+ *   Border   #BDC9D5  — table borders
+ */
+
+/* ── Base ──────────────────────────────────────────────────────────────────── */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8.5pt;
+    color: #1A1A2E;
+    line-height: 1.45;
+    margin: 0;
+}
+
+/* ── Section headers ───────────────────────────────────────────────────────── */
+.section-header {
+    background-color: #1E3A5F;
+    color: #FFFFFF;
+    font-size: 10pt;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    letter-spacing: 0.3px;
+}
+
+.sub-header {
+    background-color: #2C5282;
+    color: #FFFFFF;
+    font-size: 8.5pt;
+    font-weight: bold;
+    padding: 4px 10px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+
+/* ── Tables ────────────────────────────────────────────────────────────────── */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 7.5pt;
+    margin-bottom: 4px;
+}
+
+th {
+    background-color: #1E3A5F;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 7pt;
+    padding: 4px 6px;
+    text-align: left;
+    border: 0.3pt solid #2C5282;
+}
+
+td {
+    padding: 3px 6px;
+    border: 0.3pt solid #BDC9D5;
+    vertical-align: middle;
+}
+
+/* Alternating row shading */
+tbody tr:nth-child(even) td {
+    background-color: #EEF3F8;
+}
+tbody tr:nth-child(odd) td {
+    background-color: #FFFFFF;
+}
+
+/* Hover accent — not visible in PDF but clean for HTML preview */
+tbody tr:hover td {
+    background-color: #DCE8F5;
+}
+
+/* ── Total / footer rows ───────────────────────────────────────────────────── */
+.total-row td,
+tfoot tr td {
+    background-color: #D6E4F0;
+    font-weight: bold;
+    font-size: 7pt;
+    border-top: 1pt solid #1E3A5F;
+    color: #1E3A5F;
+}
+
+/* ── Utility classes ───────────────────────────────────────────────────────── */
+.text-right  { text-align: right; }
+.text-center { text-align: center; }
+.text-muted  { color: #7A8FA6; font-size: 7pt; }
+.mt-8        { margin-top: 8px; }
+
+.positive { color: #0D7C5F; font-weight: bold; }
+.negative { color: #C0392B; font-weight: bold; }
+
+/* ── Cover-page elements ───────────────────────────────────────────────────── */
+.cover-wrapper {
+    text-align: center;
+    padding: 12px 0 8px 0;
+    border-bottom: 1pt solid #1E3A5F;
+    margin-bottom: 10px;
+}
+.cover-firm {
+    font-size: 9pt;
+    font-weight: bold;
+    color: #E87722;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.cover-title {
+    font-size: 18pt;
+    font-weight: bold;
+    color: #1E3A5F;
+    margin: 4px 0 6px 0;
+    letter-spacing: 0.5px;
+}
+.cover-client {
+    font-size: 13pt;
+    font-weight: bold;
+    color: #1E3A5F;
+    margin: 6px 0 2px 0;
+}
+.cover-meta {
+    font-size: 8.5pt;
+    color: #4A6080;
+    margin: 1px 0;
+}
+.cover-date {
+    font-size: 8pt;
+    color: #7A8FA6;
+    margin-top: 6px;
+    font-style: italic;
+}

@@ -1,0 +1,99 @@
+[2026-09-17 13:28:32]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-17 13:28:33] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-17 13:28:42]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-17 13:28:45] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-21 19:16:50] Client: SAROJ DEVIErr: AMC name not found for ISIN:  Fund Name: 
+[2026-09-22 19:25:26]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-22 19:25:28] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-22 19:25:28]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-22 19:25:29] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-22 19:44:50]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-22 19:44:51] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-22 19:44:52]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-22 19:44:53] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-22 19:45:18]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-22 19:45:19] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-22 19:49:05]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-22 19:49:06] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-22 19:50:06]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-22 19:50:08] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-22 19:53:03]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-22 19:53:04] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-22 20:21:09]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-22 20:21:10] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-22 20:27:03]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-22 20:27:04] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-22 20:36:27]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-22 20:36:29] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-22 20:37:14]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-22 20:37:15] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-22 20:37:36]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-22 20:37:37] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-22 20:38:01]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-22 20:38:02] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 13:32:27]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 13:32:53]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 13:32:54] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 13:32:58]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 13:33:09] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 13:51:20]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 13:51:20] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 13:51:23]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 13:51:34] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 13:51:55]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 13:52:17]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 13:52:18] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 13:52:20]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 13:52:25] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 14:07:57]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 14:07:57] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 14:08:00]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 14:08:04] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 14:08:26]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 14:08:27] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 14:10:12]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 14:10:13] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 14:10:15]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 14:10:21] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 15:50:23]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 15:50:24] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 15:50:26]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 15:50:27] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 15:51:07]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 15:51:08] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 15:51:54]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 15:51:55] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 15:52:45]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 15:52:46] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 15:53:12]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 15:53:13] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 15:53:57]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 15:53:58] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 16:05:06]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 16:05:07] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 16:05:37]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 16:05:39] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 20:20:18]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 20:20:19] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-24 20:20:20]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-24 20:20:21] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-28 17:20:06]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-28 17:20:07] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-28 17:20:08]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-28 17:20:09] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-28 18:10:51]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-28 18:10:55] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-28 18:46:55]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-28 18:46:58] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-28 18:47:02]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-28 18:47:04] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-29 12:38:16]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-29 12:38:17] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-29 16:03:37]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-29 16:03:39] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-29 16:03:54]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-29 16:03:55] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-29 16:03:56]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-29 16:03:57] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
+[2026-09-29 16:11:44]  Error :NAV not found for AIF: Motilal Oswal India Excellence Fund - Mid to Mega  Assuming Cost NAV 
+[2026-09-29 16:11:45] Client: Saji Jose PulikanErr: AMC name not found for ISIN: INF903J01116 Fund Name: 
